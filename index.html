@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Despicable Me</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+    <div class="hero-section section-1">
+      <img src="img/gru.png" alt="Gru" class="hero-gru">
+      <div class="hero-banner-wrapper">
+        <img src="img/banner.png" alt="Despicable Me banner" class="hero-banner">
+      </div>
+    </div>
+
+    <div class="section-2">
+      <div class="container py-5">
+        <h2 class="text-center mb-4 text-white">Gru's Family</h2>
+        <div class="row" id="family-container">
+        </div>
+      </div>
+    </div>
+
+    <div class="section-3">
+      <div class="container py-5">
+        <h2 class="text-center mb-4">The Minions</h2>
+        <div class="row" id="minions-container">
+        </div>
+      </div>
+    </div>
+
+    <div class="section-4">
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <div class="col-md-6 mb-3 mb-md-0 text-center">
+            <p class="mb-0 footer-copy">&copy; 2023 NGL Production. All rights reserved.</p>
+          </div>
+          <div class="col-md-6 d-flex justify-content-center">
+            <div class="trivia-stack">
+              <div class="yellow-circle">
+                <p class="mb-0">Did you know there are 10,400 Minions living in Gru's house? Wait for the NGL production release for their names and ages!</p>
+              </div>
+              <div class="yellow-circle secondary">
+                <p class="mb-0">Minions don't age like humans; they are millions of years old, appearing around the time life began on Earth. While the individual Minions don't age, their lifespan is incredibly long and they are known for being very durable. For example, Bob the Minion is said to be 6 years old in the movie Minions, but this is a movie "age" and his actual biological age is millions of years old.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="characterModal" tabindex="-1" aria-labelledby="characterModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="characterModalLabel">Character Details</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-4">
+                <img id="modalCharacterImage" src="" alt="Character" class="modal-img">
+              </div>
+              <div class="col-md-8">
+                <h3 id="modalCharacterName"></h3>
+                <p id="modalCharacterAge"></p>
+                <p id="modalCharacterDescription"></p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

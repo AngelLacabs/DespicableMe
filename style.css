@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Bangers', 'Arial', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.section-1 {
+  position: relative;
+  height: 60vh;
+  background: radial-gradient(circle at top, #0a5ac3, #001947);
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 0;
+  overflow: hidden;
+  padding: 0 5vw 0 0;
+}
+
+.hero-gru {
+  height: 100%;
+  width: auto;
+  max-width: 40vw;
+  object-fit: cover;
+  object-position: left;
+}
+
+.hero-banner-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-banner {
+  width: min(45vw, 550px);
+  height: 100%;
+  max-height: 70%;
+  object-fit: contain;
+  display: block;
+}
+
+.section-2 {
+  background: linear-gradient(180deg, #3498db 0%, #1a1a4d 100%);
+  padding-bottom: 50px;
+}
+
+.character-card {
+  transition: transform 0.3s;
+  cursor: pointer;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.character-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+}
+
+.character-card img {
+  height: 200px;
+  width: 100%;
+  object-fit: contain;
+  background: #fff;
+}
+
+.section-3 {
+  background: #FFD700;
+}
+
+.minion-card {
+  background-color: #ffeb3b;
+  transition: transform 0.3s;
+  cursor: pointer;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  height: 240px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.minion-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 18px rgba(0,0,0,0.25);
+}
+
+.minion-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.card-name {
+  color: #fff;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 0.75rem;
+}
+
+.section-2 h2.text-white {
+  color: #FFD700 !important;
+}
+
+.section-2 .card-name {
+  color: #FFD700;
+}
+
+#family-container,
+#minions-container {
+  --bs-gutter-y: 2.5rem;
+}
+
+.section-2 #family-container .col-md-6 {
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+
+.section-3 #minions-container .col-6 {
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+
+@media (max-width: 992px) {
+  .section-3 #minions-container .col-6 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-3 #minions-container .col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+.section-3 .card-name {
+  color: #1a1a4d;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.4);
+}
+
+.section-4 {
+  background: #FFD700;
+}
+
+.yellow-circle {
+  background-color: #ffeb3b;
+  width: 260px;
+  min-height: 220px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 28px;
+  margin: 0 auto;
+  color: #333;
+  font-weight: bold;
+  font-size: 0.95rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+
+.yellow-circle.secondary {
+  background-color: #ffe066;
+}
+
+.trivia-stack {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.modal .modal-title {
+  font-size: 2rem;
+  color: #FFD700;
+}
+
+#modalCharacterName {
+  font-size: 2.4rem;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  color: #FFD700;
+}
+
+#modalCharacterAge {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #FFD700;
+}
+
+#modalCharacterDescription {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  letter-spacing: 0.6px;
+  color: #FFD700;
+}
+
+.modal-content {
+  backdrop-filter: blur(12px);
+  background-color: rgba(5, 32, 95, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .section-1 {
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 20px 40px;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .hero-gru {
+    width: 70%;
+    max-width: 280px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .hero-banner-wrapper {
+    width: 100%;
+  }
+
+  .hero-banner {
+    width: 80%;
+    max-width: 360px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .trivia-stack {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
